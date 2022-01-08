@@ -36,6 +36,10 @@ namespace ProjetoElevador.Model
         {
             get { return pessoas.Count; }
         }
+        public void AddPessoa(Pessoa p)
+        {
+            pessoas.Add(p);
+        }
 
         public void Inicializar(int capacidade, int andares)
         {
@@ -43,29 +47,25 @@ namespace ProjetoElevador.Model
             QtdeAndares = andares;
         }
 
-        public void AddPessoa(Pessoa p)
+        public int Subir()
         {
-            pessoas.Add(p);
+            throw new NotImplementedException();
         }
-
-        public int descer()
+        
+        public int Descer()
         {
             throw new NotImplementedException();
         }
 
-        public int entrar()
+        public int Entrar()
         {
             throw new NotImplementedException();
         }
 
-        public int sair()
+        public int Sair()
         {
             throw new NotImplementedException();
         }
 
-        public int subir()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

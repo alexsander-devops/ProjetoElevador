@@ -17,10 +17,10 @@ namespace ProjetoElevador.Controller
             _painel.IniciarElevador(_elevator);
         }
 
-        public int pessoaEntrar(Elevador elevador, Pessoa pessoa)
+        public int pessoaEntrar(Pessoa pessoa)
         {
-            elevador.ltAtual.Add(pessoa);
-            return elevador.ltAtual.Count;
+            _elevator.AddPessoa(pessoa);
+            return _elevator.Pessoas;
         }
     }
 }
