@@ -1,19 +1,20 @@
-﻿using ProjetoElevador.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProjetoElevador.View;
+using ProjetoElevador.Model;
 
 namespace ProjetoElevador.Controller
 {
     internal class ElevadorController
     {
         private Elevador _elevator;
-        public ElevadorController(Elevador elevador)
+        private PainelElevador _painel;
+        public ElevadorController()
         {
-            elevador.inicializar(5, 12);
-            elevador.andar = 0;
+            _painel.IniciarElevador(_elevator);
         }
 
         public int pessoaEntrar(Elevador elevador, Pessoa pessoa)
