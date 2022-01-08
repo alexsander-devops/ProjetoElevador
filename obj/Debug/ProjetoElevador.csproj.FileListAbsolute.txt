@@ -6,3 +6,8 @@ C:\Users\Alex\source\repos\ProjetoElevador\obj\Debug\ProjetoElevador.csproj.Sugg
 C:\Users\Alex\source\repos\ProjetoElevador\obj\Debug\ProjetoElevador.csproj.CoreCompileInputs.cache
 C:\Users\Alex\source\repos\ProjetoElevador\obj\Debug\ProjetoElevador.exe
 C:\Users\Alex\source\repos\ProjetoElevador\obj\Debug\ProjetoElevador.pdb
+C:\Users\Alex\Documents\OceanBrasil\ProjetoElevador\obj\Debug\ProjetoElevador.csproj.AssemblyReference.cache
+C:\Users\Alex\Documents\OceanBrasil\ProjetoElevador\obj\Debug\ProjetoElevador.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alex\Documents\OceanBrasil\ProjetoElevador\obj\Debug\ProjetoElevador.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Documents\OceanBrasil\ProjetoElevador\obj\Debug\ProjetoElevador.exe
+C:\Users\Alex\Documents\OceanBrasil\ProjetoElevador\obj\Debug\ProjetoElevador.pdb

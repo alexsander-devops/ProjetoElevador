@@ -17,10 +17,12 @@ namespace ProjetoElevador.View
         public void IniciarElevador(Elevador e)
         {
             Console.WriteLine("Digite a quantidade de andares do prédio: ");
-            e.QtdeAndares = int.Parse(Console.ReadLine());
+            int andares = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite a lotação máxima do elevador: ");
-            e.Capacidade = int.Parse(Console.ReadLine());
+            int capacidade = int.Parse(Console.ReadLine());
+
+            e.Inicializar(capacidade, andares);
         }
     }
 }

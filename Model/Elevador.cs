@@ -37,6 +37,12 @@ namespace ProjetoElevador.Model
             get { return pessoas.Count; }
         }
 
+        public void Inicializar(int capacidade, int andares)
+        {
+            Capacidade = capacidade;
+            QtdeAndares = andares;
+        }
+
         public void AddPessoa(Pessoa p)
         {
             pessoas.Add(p);
