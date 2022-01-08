@@ -41,28 +41,6 @@ namespace ProjetoElevador.Model
         {
             pessoas.Add(p);
         }
-        public void inicializar(int lotacaoMax, int andares)
-        {
-            try 
-            {
-                capacidade = lotacaoMax;
-            }
-            catch (InvalidOperationException ex)
-            {
-                Console.WriteLine(ex.GetType().FullName);
-                Console.WriteLine(ex.Message);
-            }
-
-            try 
-            {
-                qtdeAndares = andares;
-            }
-            catch (InvalidOperationException ex)
-            {
-                Console.WriteLine(ex.GetType().FullName);
-                Console.WriteLine(ex.Message);
-            }
-        }
 
         public int descer()
         {
@@ -73,8 +51,6 @@ namespace ProjetoElevador.Model
         {
             throw new NotImplementedException();
         }
-
-        
 
         public int sair()
         {
