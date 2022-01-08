@@ -9,6 +9,7 @@ namespace ProjetoElevador.Controller
 {
     internal class ElevadorController
     {
+        private Elevador _elevator;
         public ElevadorController(Elevador elevador)
         {
             elevador.inicializar(5, 12);
