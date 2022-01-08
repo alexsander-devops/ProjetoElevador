@@ -8,13 +8,39 @@ namespace ProjetoElevador.Model
 {
     internal class Elevador : IElevador
     {
-        public static int capacidade { get; set; }
-        public static int qtdeAndares { get; set; }
+        // Atributos da classe Elevador
+        private int capacidade;
+        private int qtdeAndares;
+        private int andar;
+        private List<Pessoa> pessoas = new List<Pessoa>();
 
-        public int andar { get; set; }
+        public int Capacidade
+        {
+            get { return capacidade; }
+            set { capacidade = value; }
+        }
 
-        public List<Pessoa> ltAtual { get; set; }
+        public int QtdeAndares
+        {
+            get { return qtdeAndares; }
+            set { qtdeAndares = value; }
+        }
 
+        public int Andar
+        {
+            get { return andar; }
+            set { andar = value; }
+        }
+
+        public int Pessoas
+        {
+            get { return pessoas.Count; }
+        }
+
+        public void AddPessoa(Pessoa p)
+        {
+            pessoas.Add(p);
+        }
         public void inicializar(int lotacaoMax, int andares)
         {
             try 
