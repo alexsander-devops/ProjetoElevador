@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ProjetoElevador.Model;
+using ProjetoElevador.View;
+using ProjetoElevador.Controller;
 
 namespace ProjetoElevador
 {
@@ -11,12 +13,7 @@ namespace ProjetoElevador
     {
         static void Main(string[] args)
         {
-            Elevador.qtdeAndares = 12;
-            Elevador e = new Elevador();
-            e.andar = 0;
-            Pessoa p = new Pessoa(e.andar);
-            Console.WriteLine("O andar que a pessoa escolheu é: {0}",p.andar);
-            Console.ReadLine();
+            ElevadorController ec = new ElevadorController();
         }
     }
 }
