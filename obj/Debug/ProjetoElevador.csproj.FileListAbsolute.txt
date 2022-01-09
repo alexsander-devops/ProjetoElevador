@@ -11,3 +11,6 @@ C:\Users\Alex\Documents\OceanBrasil\ProjetoElevador\obj\Debug\ProjetoElevador.cs
 C:\Users\Alex\Documents\OceanBrasil\ProjetoElevador\obj\Debug\ProjetoElevador.csproj.CoreCompileInputs.cache
 C:\Users\Alex\Documents\OceanBrasil\ProjetoElevador\obj\Debug\ProjetoElevador.exe
 C:\Users\Alex\Documents\OceanBrasil\ProjetoElevador\obj\Debug\ProjetoElevador.pdb
+C:\Users\Alex\Documents\OceanBrasil\ProjetoElevador\bin\Debug\ProjetoElevador.exe.config
+C:\Users\Alex\Documents\OceanBrasil\ProjetoElevador\bin\Debug\ProjetoElevador.exe
+C:\Users\Alex\Documents\OceanBrasil\ProjetoElevador\bin\Debug\ProjetoElevador.pdb

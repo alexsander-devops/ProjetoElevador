@@ -12,7 +12,7 @@ namespace ProjetoElevador.Controller
     {
         private static Elevador _elevator;
         private PainelElevador _painel;
-        public static int qtdeAndares = _elevator.QtdeAndares;
+        
         public ElevadorController()
         {
             _painel.IniciarElevador(_elevator);
