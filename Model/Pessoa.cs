@@ -8,7 +8,7 @@ using ProjetoElevador.Controller;
 
 namespace ProjetoElevador.Model
 {
-    internal class Pessoa
+    public class Pessoa
     {
         private int andar;
 
