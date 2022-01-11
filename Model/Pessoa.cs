@@ -11,14 +11,19 @@ namespace ProjetoElevador.Model
     public class Pessoa
     {
         private int andar;
-
-        private int andaresQtde = ElevadorController.qtdeAndares;
+        
+        // Ao instanciar um objeto pessoa
+        // devemos passar como parâmetro
+        // um inteiro que corresponde 
+        // ao andar em que o elevador está.
         public Pessoa(int a)
         {
+            int limiteAndares = Elevador.QtdeAndares; 
+            
             do
             {
                 Random rnd = new Random();
-                andar = rnd.Next(-1, andaresQtde);
+                andar = rnd.Next(0, limiteAndares);
                 if (andar != a) { break; }
             } while (true);
             
