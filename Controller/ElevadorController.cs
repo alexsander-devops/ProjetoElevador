@@ -10,22 +10,12 @@ namespace ProjetoElevador.Controller
 {
     public class ElevadorController
     {
-        private static Elevador _elevator;
-        private PainelElevador _painel;
+        private Elevador _elevator = new Elevador();
+        private PainelElevador _painel = new PainelElevador();
         
         public ElevadorController()
         {
             _painel.IniciarElevador(_elevator);
-        }
-
-        public int QtdeAndares()
-        {
-            return _elevator.QtdeAndares;
-        }
-        public int pessoaEntrar(Pessoa pessoa)
-        {
-            _elevator.AddPessoa(pessoa);
-            return _elevator.Pessoas;
         }
     }
 }
