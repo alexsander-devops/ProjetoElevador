@@ -10,7 +10,7 @@ namespace ProjetoElevador.Model
     {
         // Atributos da classe Elevador
         private int capacidade;
-        private int andar;
+        private int andar = 0;
         private List<Pessoa> pessoas = new List<Pessoa>();
         private static int qtdeAndares = 0;
 
@@ -35,10 +35,6 @@ namespace ProjetoElevador.Model
         {
             get { return pessoas.Count; }
         }
-        public void AddPessoa(Pessoa p)
-        {
-            pessoas.Add(p);
-        }
 
         public void Inicializar(int capacidade, int andares)
         {
@@ -46,9 +42,22 @@ namespace ProjetoElevador.Model
             qtdeAndares = andares;
         }
 
+        // Incrementa o andar em que o elevador está
+        // e ao incrementar, verifica se alguma pessoa
+        // solicitou o andar em que ele está.
         public int Subir()
         {
-            throw new NotImplementedException();
+            if (andar < qtdeAndares) {
+                andar++;
+            } 
+
+            foreach (Pessoa pessoa in pessoas)
+            {
+                if (pessoa.Andar == andar)
+                    Sair(pessoa);
+            }
+
+            return andar;
         }
         
         public int Descer()
@@ -56,14 +65,40 @@ namespace ProjetoElevador.Model
             throw new NotImplementedException();
         }
 
-        public int Entrar()
+        // O método recebe como parâmetro
+        // um objeto do tipo pessoa, adicionando-o 
+        // às pessoas dentro do elevador  
+        // e retorna a quantidade de pessoas.
+        public int Entrar(Pessoa pessoa)
         {
-            throw new NotImplementedException();
+            try
+            {
+                pessoas.Add(pessoa);
+            }
+            catch (Exception)
+            {
+                throw new NotImplementedException();
+            }
+
+            return Pessoas;
         }
 
-        public int Sair()
+        // O método recebe como parâmetro
+        // um objeto do tipo pessoa e 
+        // o retira da quantidade de
+        // pessoas dentro do elevador.
+        public int Sair(Pessoa pessoa)
         {
-            throw new NotImplementedException();
+            try
+            {
+                pessoas.Remove(pessoa);
+            }
+            catch (Exception)
+            {
+                throw new NotImplementedException();
+            }
+
+            return Pessoas;
         }
 
     }

@@ -11,7 +11,11 @@ namespace ProjetoElevador.Model
     public class Pessoa
     {
         private int andar;
-        
+        public int Andar
+        {
+            get { return andar; }
+        }
+
         // Ao instanciar um objeto pessoa
         // devemos passar como parâmetro
         // um inteiro que corresponde 
@@ -29,9 +33,6 @@ namespace ProjetoElevador.Model
             
         }
 
-        public int Andar()
-        {
-            return andar;
-        }
+
     }
 }
