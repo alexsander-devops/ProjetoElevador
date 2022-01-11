@@ -8,7 +8,7 @@ using ProjetoElevador.Model;
 
 namespace ProjetoElevador.Controller
 {
-    internal class ElevadorController
+    public class ElevadorController
     {
         private static Elevador _elevator;
         private PainelElevador _painel;
