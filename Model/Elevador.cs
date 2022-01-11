@@ -10,9 +10,9 @@ namespace ProjetoElevador.Model
     {
         // Atributos da classe Elevador
         private int capacidade;
-        private int qtdeAndares;
         private int andar;
         private List<Pessoa> pessoas = new List<Pessoa>();
+        private static int qtdeAndares = 0;
 
         public int Capacidade
         {
@@ -20,10 +20,9 @@ namespace ProjetoElevador.Model
             set { capacidade = value; }
         }
 
-        public int QtdeAndares
+        public static int QtdeAndares
         {
-            get { return qtdeAndares; }
-            set { qtdeAndares = value; }
+            get { return qtdeAndares; } 
         }
 
         public int Andar
@@ -44,7 +43,7 @@ namespace ProjetoElevador.Model
         public void Inicializar(int capacidade, int andares)
         {
             Capacidade = capacidade;
-            QtdeAndares = andares;
+            qtdeAndares = andares;
         }
 
         public int Subir()
