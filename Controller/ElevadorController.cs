@@ -10,12 +10,12 @@ namespace ProjetoElevador.Controller
 {
     public class ElevadorController
     {
-        private Elevador _elevator = new Elevador();
+        private Elevador _elevador = new Elevador();
         private PainelElevador _painel;
         
         public ElevadorController()
         {
-            _painel = new PainelElevador(_elevator);
+            _painel = new PainelElevador(_elevador);
         }
     }
 }

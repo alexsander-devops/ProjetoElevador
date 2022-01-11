@@ -14,9 +14,9 @@ namespace ProjetoElevador.Model
 
         int Descer();
 
-        int Entrar();
+        int Entrar(Pessoa pessoa);
 
-        int Sair();
+        int Sair(Pessoa pessoa);
 
     }
 }

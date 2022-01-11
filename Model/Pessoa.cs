@@ -33,10 +33,5 @@ namespace ProjetoElevador.Model
         {
             return andar;
         }
-
-        public void limiteAndares(int n)
-        {
-            andaresQtde = n;
-        }
     }
 }
