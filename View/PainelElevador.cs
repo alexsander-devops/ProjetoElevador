@@ -9,7 +9,7 @@ namespace ProjetoElevador.View
 {
     // Essa classe será responsável por exibir 
     // as informações do elevador na tela
-    internal class PainelElevador
+    public class PainelElevador
     {
         // Esse método solicita as informações iniciais
         // que são: quantidade de andares do prédio e
