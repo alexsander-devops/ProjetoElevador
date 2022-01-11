@@ -14,12 +14,12 @@ namespace ProjetoElevador.View
         // Esse método solicita as informações iniciais
         // que são: quantidade de andares do prédio e
         // capacidade máxima do elevador
-        public void IniciarElevador(Elevador e)
+        public PainelElevador(Elevador e)
         {
-            Console.WriteLine("Digite a quantidade de andares do prédio: ");
+            Console.WriteLine("Qual a quantidade de andares do prédio?");
             int andares = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Digite a lotação máxima do elevador: ");
+            Console.WriteLine("Qual a lotação máxima do elevador?");
             int capacidade = int.Parse(Console.ReadLine());
 
             e.Inicializar(capacidade, andares);
