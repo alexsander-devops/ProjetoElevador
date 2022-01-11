@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoElevador.Model
 {
-    internal class Elevador : IElevador
+    public class Elevador : IElevador
     {
         // Atributos da classe Elevador
         private int capacidade;
